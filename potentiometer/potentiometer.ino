@@ -45,11 +45,11 @@ int changeColor(int colorMode) {
     colorMode=blueLED;
     blink(0, 0, 255);
   } else if (colorMode == blueLED){
-    colorMode=redLED;
-    blink(255, 0, 0);
-  } else {
     colorMode=0;
     blink(255, 255, 255);
+  } else {
+    colorMode=redLED;
+    blink(255, 0, 0);
   }
   delay(500);
   return colorMode;
